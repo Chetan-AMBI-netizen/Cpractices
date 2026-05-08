@@ -10,6 +10,20 @@
  else{
     printf("FAIL");
  }
+for (int a =1;a<=10; a++){
+   printf("%d\n",a);
+}
+ int A = 20;
+while(A<=30){
+   printf("%d\n",A);
+   A++;
+}
+int i = 0;
+do{
+   printf("hello good midnight Chetan\n");
+   i++;
+
+}while(i<5);
 
 
 
