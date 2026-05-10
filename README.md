@@ -10,4 +10,5 @@ REPOSITORY CONSISTS:-
 4) Operators-ALL
 5) Conditions[if,else-if,else]
 6) Loops[for,while,do-while]
-........
+7) ARRAYS[1D,2D]
+8) ........
