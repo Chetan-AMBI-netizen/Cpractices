@@ -46,7 +46,7 @@ if(strstr(course,keyword)!=NULL){
 }
 else{
     printf("keyword '%s' not found in course description",keyword);
-}*/
+}
 float a,b,c,D,root1,root2;
 printf("enter the coefficients:-");
 scanf("%f%f%f",&a,&b,&c);
@@ -67,7 +67,35 @@ else if(D==0){
 else{
     printf("the roots are imaginary\n");
 }
+
+int arr[10] = {1,2,3,4,5,6,7,8,9};
+for(int i = 0; i<10; i++){
+    printf("%d \n",arr[i]);
+}
+int a[2][3] = {{10,20,30},{40,50,60}};
+printf("%d\n",a[0][1]);
+
+for (int i = 0; i<2; i++){
+    for (int j = 0; j<3; j++){
+        printf("%d ",a[i][j]);
+
+    }
+    printf("\n");
+}*/
+char str1[100] = "Hello";
+char str2[100] = "world";
+char str3[100];
+strcpy(str3,str1);
+printf("the copy of str1 is:-%s\n",str3);
+strcmp(str1,str2);
+printf("the length of an first string: %d\n",strlen(str1));
+printf("the comparison of str1 and str2 is:_%d\n",strcmp(str1,str2));
+strcat(str1,str2);
+printf("the concatenation of str1,str2 is:-%s\n",str1);
+printf("the   character o is found at in string %s\n",strchr(str1,'o'));
+printf("the reverse of str1 is:-%s\n",strrev(str1));
  return 0;
 }
+
 
 
