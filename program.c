@@ -2,9 +2,9 @@
 #include<string.h>
 #include<math.h>
 int main(){
-/* int marks;
+ /*int marks;
  printf("enter your marks:-\n");
- scanf("%d",marks);
+ scanf("%d",&marks);
  if(marks>=90){
 
  
@@ -81,7 +81,7 @@ for (int i = 0; i<2; i++){
 
     }
     printf("\n");
-}*/
+}
 char str1[100] = "Hello";
 char str2[100] = "world";
 char str3[100];
@@ -93,8 +93,32 @@ printf("the comparison of str1 and str2 is:_%d\n",strcmp(str1,str2));
 strcat(str1,str2);
 printf("the concatenation of str1,str2 is:-%s\n",str1);
 printf("the   character o is found at in string %s\n",strchr(str1,'o'));
-printf("the reverse of str1 is:-%s\n",strrev(str1));
- return 0;
+printf("the reverse of str1 is:-%s\n",strrev(str1));*/
+int a[4][4] = {
+    {1,2,3,4},
+    {5,6,7,8},
+    {9,10,11,12},
+    {13,14,15,16}
+};
+int sum = 0;
+for (int i = 0; i<4; i++){  
+    for (int j = 0; j<4; j++){
+        if(i==j){
+            sum = sum + a[i][j];
+        }
+    }
+}
+printf("the sum of diagonal elements is: %d\n",sum);
+
+int b[5] = {1,2,3,4,5};
+int *p;
+p = b;
+printf("%u\n",p);
+
+printf("before incrementing pointer:%d\n",*p);
+p++;
+printf("after incrementing pointer:%d\n",*p);
+return 0;
 }
 
 
