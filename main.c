@@ -1,5 +1,24 @@
 # include <stdio.h>
- int main(){
+void welcome(char name[],int age,char country[]){
+   printf("welcome to INDIA %s\n",name );
+   printf("details of the %s\n",name);
+   printf("his age is %d\n",age);
+   printf("he is from %s\n",country);
+
+}
+int main(){
+   char name[20];
+   int age;
+   char country[10];
+   printf("enter the name:-\n");
+   scanf("%s",name);
+   printf("enter the age:-\n");
+   scanf("%d",&age);
+   printf("enter the country:-\n");
+   scanf("%s",country);
+
+   welcome(name,age,country);
+
  /*int marks = 98;
  if (marks >= 90 && marks<=100){
     printf("Grade A");
@@ -99,7 +118,7 @@ switch(homes){
 
    default:
    printf("no home is in this area");
-}*/
+}
 char homes;
 printf("enter your home BLOCK:-\n");
 scanf("%c",homes);
@@ -116,7 +135,9 @@ switch(homes){
    default:
    printf("no home block is in this area");
 
+} */
+// FUNCTIONS IN C //
+return 0;
 }
-   return 0;
- }
+
   
