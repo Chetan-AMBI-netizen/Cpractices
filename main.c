@@ -60,7 +60,7 @@ for (int i = 0; i<=5; i++){
 }
   float percentage =(m[0]+m[1]+m[2]+m[3]+m[4]+m[5])/6;
    printf("your percentage is %.2f '%%'\n",percentage);
- }*/
+ }
 int a[5] ={10,20,30,40,50};
 int sum = 0;
 for (int i = 0; i<5; i++){
@@ -80,5 +80,43 @@ for (int i = 0; i<3; i++){
    }
    printf("\n");
 }
-return 0;
+// SWITCH CASE IN C //
+int homes = 0;
+printf("enter your home number:-\n");
+scanf("%d",&homes);
+switch(homes){
+   case 1:
+   printf(" Home number %d nandi HOME", homes);
+   break;
+   case 2:
+
+   printf(" Home number %d basava HOME", homes);
+   break;
+
+   case 3:
+   printf(" Home number %d balaya HOME", homes);
+   break;
+
+   default:
+   printf("no home is in this area");
+}*/
+char homes;
+printf("enter your home BLOCK:-\n");
+scanf("%c",homes);
+switch(homes){
+   case 'A':
+   printf("home block %c is Nandi HOME",homes);
+   break;
+   case 'B':
+   printf("home block %c is  BASAVA HOME ",homes);
+   break;
+   case 'C':
+   printf("home block %c is BALAYA HOME",homes);
+   break;
+   default:
+   printf("no home block is in this area");
+
+}
+   return 0;
  }
+  
