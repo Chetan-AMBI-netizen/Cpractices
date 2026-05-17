@@ -2,7 +2,7 @@
 #include<string.h>
 #include<math.h>
 int main(){
- /*int marks;
+ int marks;
  printf("enter your marks:-\n");
  scanf("%d",&marks);
  if(marks>=90){
@@ -146,7 +146,7 @@ for (int i = 0; i<5; i++){
         printf("key not found");
     }
 }
-    */
+    
 
 //2D ARRAY MATRIX INPUT//
 int Arr[2][3];
@@ -162,6 +162,18 @@ for(int i = 0; i<2; i++){
     }
 
 printf("  \n ");
+}
+
+int A[2][2] = {
+    {1,2},
+{3,4}};
+int B[2][2] = {
+    {10,20},
+    {30,40}
+};
+int C[2][2];
+for (int i = 0 ; i<2; i++){
+    for(int j=0; j<2; )
 }
 
 
