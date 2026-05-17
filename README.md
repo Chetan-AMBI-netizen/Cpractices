@@ -12,5 +12,5 @@ REPOSITORY CONSISTS:-
 6) Loops[for,while,do-while]
 7) ARRAYS[1D,2D]
 8) Strings
-9) Functions
-10) ......
+9) Functions[return]
+10) .....

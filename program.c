@@ -93,7 +93,7 @@ printf("the comparison of str1 and str2 is:_%d\n",strcmp(str1,str2));
 strcat(str1,str2);
 printf("the concatenation of str1,str2 is:-%s\n",str1);
 printf("the   character o is found at in string %s\n",strchr(str1,'o'));
-printf("the reverse of str1 is:-%s\n",strrev(str1));*/
+printf("the reverse of str1 is:-%s\n",strrev(str1));
 int a[4][4] = {
     {1,2,3,4},
     {5,6,7,8},
@@ -118,6 +118,53 @@ printf("%u\n",p);
 printf("before incrementing pointer:%d\n",*p);
 p++;
 printf("after incrementing pointer:%d\n",*p);
+// array modification//
+int arr[5] = {1,2,3,4};
+arr[2] = 100;
+for(int i= 0; i<5; i++){
+    printf("%d\n",arr[i]);
+
+}
+int ar[4] = {10,20,};
+for (int i = 0; i<=4 ; i++ ){
+    scanf(" enter a number:- %d\n",&ar[i]);
+}
+    for (int i = 0; i<=4; i++){
+        printf("%d\n", ar[i]);
+    }
+// ARRAY operations//
+// 1) LInear search//
+int A[5] = {100,101,102,103};
+int key = 104;
+
+for (int i = 0; i<5; i++){
+    
+    if(A[i] == key ){
+        printf("key found at %d",i);
+    }
+    else{
+        printf("key not found");
+    }
+}
+    */
+
+//2D ARRAY MATRIX INPUT//
+int Arr[2][3];
+for (int i=0; i<2; i++){
+    for (int j =0; j<3; j++){
+        printf("enter a matrix:-");
+        scanf("%d", &Arr[i][j]);
+    }
+}
+for(int i = 0; i<2; i++){
+    for(int j =0; j<3; j++){
+        printf("%d",Arr[i][j]);
+    }
+
+printf("  \n ");
+}
+
+
 return 0;
 }
 
