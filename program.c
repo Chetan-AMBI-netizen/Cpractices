@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include<string.h>
 #include<math.h>
-int main(){
  /*int marks;
  printf("enter your marks:-\n");
  scanf("%d",&marks);
@@ -163,8 +162,8 @@ for(int i = 0; i<2; i++){
 
 printf("  \n ");
 }
-*/
-// 2D ARRAY MATRIX ADDITION//
+
+// 2D  ARRAY MATRIX ADDITION//
 
 int A[3][3] = {
     {1,2,3},
@@ -190,10 +189,25 @@ for (int i = 0; i<3; i++){
 
 printf(" \n ");
 }   
+*/
 
+//FUNCTIONS IN C//
 
+void printgod();
+void bhakta();
 
-return 0;
+int main(){
+    printgod();
+    bhakta();
+    return 0;
+
+}
+
+void printgod(){
+    printf("RAGHAVENDRA SWAMIJI\n");
+}
+void bhakta(){
+    printf("CHETAN\n");
 }
 
 
