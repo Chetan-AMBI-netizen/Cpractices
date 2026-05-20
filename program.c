@@ -2,6 +2,7 @@
 void calci();
 int main(){
     calci();
+    
     return 0;
 
 }
