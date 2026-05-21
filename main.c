@@ -1,25 +1,8 @@
 # include <stdio.h>
-void welcome(char name[],int age,char country[]){
-   printf("welcome to INDIA %s\n",name );
-   printf("details of the %s\n",name);
-   printf("his age is %d\n",age);
-   printf("he is from %s\n",country);
+/*
+ 
 
-}
-int main(){
-   char name[20];
-   int age;
-   char country[10];
-   printf("enter the name:-\n");
-   scanf("%s",name);
-   printf("enter the age:-\n");
-   scanf("%d",&age);
-   printf("enter the country:-\n");
-   scanf("%s",country);
-
-   welcome(name,age,country);
-
- /*int marks = 98;
+ int marks = 98;
  if (marks >= 90 && marks<=100){
     printf("Grade A");
  }
@@ -137,7 +120,98 @@ switch(homes){
 
 } */
 // FUNCTIONS IN C //
-return 0;
-}
 
-  
+// no argument + no return value//
+/*void greeting(){
+   printf("hello world\n");
+}
+int main(){
+   greeting();
+    return 0;
+}
+// argument + no return value//
+
+void welcome(char name[],int age,char country[]){
+   printf("welcome to INDIA %s\n",name );
+   printf("details of the %s\n",name);
+   printf("his age is %d\n",age);
+   printf("he is from %s\n",country);
+
+}  
+int main (){
+   char name[20];
+   int age;
+   char country[10];
+   printf("enter the name:-\n");
+   scanf("%s",name);
+   printf("enter the age:-\n");
+   scanf("%d",&age);
+   printf("enter the country:-\n");
+   scanf("%s",country);
+
+   welcome(name,age,country);
+   return 0;
+}
+   
+  //no argument + return value//
+  int sum(int a, int b){
+   return a+b;
+
+
+  }
+  int main(){
+   int result = sum(10,20);
+   printf("the sum of 10 and 20 is:- %d",result);
+   return 0;
+  }
+   
+  // argument + return value //
+float rectanglearea(float length, float breadth);
+float circelarea(float radius);  
+float squarearea(float side);
+int main(){
+   
+    printf("area of rectangle is %.2f\n",rectanglearea(5.0,3.0));           
+    printf("area of circle is %.2f\n",circelarea(4.0));
+    printf("area of square is %.2f\n",squarearea(6.0));
+
+}
+float rectanglearea(float length,float breadth){
+    return length*breadth;
+
+}
+float circelarea(float radius){
+    return 3.14159*radius*radius;
+}
+float squarearea(float side){
+    return side*side;
+}
+// temperature check using function //
+void check_temperature(float temp){
+   if(temp>=45){
+      printf("the weather is  very hot\n");
+   }
+   else if (temp<45 && temp>=30){
+      printf("the weather is hot\n");
+   }
+
+   else if(temp>= 20 && temp<30){
+      printf("the weather is normal\n");
+
+   }
+   else if (temp<20){
+      printf("the weather is cool\n");
+   }
+   else{
+      printf("the weather is very cold\n");
+   }
+   }
+ int main(){
+   float temp;
+   printf(" enter the temperature:-\n");
+   scanf("%f",&temp);
+   check_temperature(temp);
+   return 0;
+ }
+   */
+

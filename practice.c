@@ -1,5 +1,5 @@
 #include<stdio.h>
-float rectanglearea(float length, float breadth);
+/*float rectanglearea(float length, float breadth);
 float circelarea(float radius);
 float squarearea(float side);
 int main()
@@ -7,7 +7,7 @@ int main()
 
     /*printf("area of rectangle is %.2f\n",rectanglearea(5.0,3.0));           
     printf("area of circle is %.2f\n",circelarea(4.0));
-    printf("area of square is %.2f\n",squarearea(6.0));*/
+    printf("area of square is %.2f\n",squarearea(6.0));
 float length,breadth,side,radius;
 printf("enter the length and breadth of rectangle:-\n");
 scanf("%f %f",&length,&breadth);
@@ -33,4 +33,19 @@ float circelarea(float radius){
 }
 float squarearea(float side){
     return side*side;
+}
+*/
+// celsius to fahrent conversation using function//
+float convert_celsius_fahrenheit(float celsius){
+
+
+    return (celsius *9.0 /5.0) + 32.0;
+}
+int main(){
+    float celsius,fahrenheit;
+    printf("enter a celsius:-");
+    scanf ("%f",&celsius);
+    fahrenheit = convert_celsius_fahrenheit(celsius);
+    printf("%.2f celsius is equal to %.2f fahrenheit",celsius,fahrenheit);
+        return 0;
 }
