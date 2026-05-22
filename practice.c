@@ -5,7 +5,7 @@ float squarearea(float side);
 int main()
 {
 
-    /*printf("area of rectangle is %.2f\n",rectanglearea(5.0,3.0));           
+    rintf("area of rectangle is %.2f\n",rectanglearea(5.0,3.0));           
     printf("area of circle is %.2f\n",circelarea(4.0));
     printf("area of square is %.2f\n",squarearea(6.0));
 float length,breadth,side,radius;
@@ -34,7 +34,7 @@ float circelarea(float radius){
 float squarearea(float side){
     return side*side;
 }
-*/
+
 // celsius to fahrent conversation using function//
 float convert_celsius_fahrenheit(float celsius){
 
@@ -48,4 +48,5 @@ int main(){
     fahrenheit = convert_celsius_fahrenheit(celsius);
     printf("%.2f celsius is equal to %.2f fahrenheit",celsius,fahrenheit);
         return 0;
-}
+}*/
+

@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include<math.h>
 
-void add(float a, float b);
+/*void add(float a, float b);
 void sub(float a, float b);
 void multi( float a, float b);
 void  divide(float a, float b);
@@ -86,6 +86,40 @@ void divide( float a, float b){
 }
 void power(int a, int b){
     printf("the power of %d to %d is:- %f" ,a,b, pow(a,b));
+}
+    */
+   // pointers//
+int main(){
+    int age = 20;
+     int *p = &age;
+     *p = 30;
+    int _ages = *p; //pointer updated or change by value using a pointer.//
+
+     printf("%d\n",_ages);
+     printf("%p\n",&age);//&age and p is return same adress value//
+     printf("%p\n",*p); // but it return a different value adress//
+     printf("%p\n",p);
+     printf("%u\n",&age); //same adress value for both &age and p//
+     printf("%u\n",p);
+     printf("%d\n",&age); //returns a adress of an age in both &age and p//
+     printf("%d\n",p); 
+     printf("%d\n",_ages); //returns a output is 20
+
+     //pointer with an array//
+     int numbers[4] = {1,2,3};
+     int *ptr= numbers;
+     for (int i=0; i<4;  i++){
+        printf("%d\n",numbers);
+        printf("%d\n", *ptr);
+        p++;  // pointer increment//
+     }
+    printf("%d\n",ptr); // 6422272//
+    printf("%d\n",&numbers);//6422272//
+    printf("%d\n",numbers[2]);//3//
+
+
+     return 0;
+
 }
 
 

@@ -1,6 +1,7 @@
 # include <stdio.h>
-/*
+
  
+/** 
 
  int marks = 98;
  if (marks >= 90 && marks<=100){
@@ -118,11 +119,11 @@ switch(homes){
    default:
    printf("no home block is in this area");
 
-} */
+} 
 // FUNCTIONS IN C //
 
 // no argument + no return value//
-/*void greeting(){
+void greeting(){
    printf("hello world\n");
 }
 int main(){
@@ -212,6 +213,5 @@ void check_temperature(float temp){
    scanf("%f",&temp);
    check_temperature(temp);
    return 0;
- }
-   */
+ }*/
 
