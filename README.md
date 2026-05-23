@@ -7,7 +7,9 @@ C programming practice
 I'm  daily contributing  daily on this repository 
 to maintaining  a consistency work contribution in this repository
 
+
 REPOSITORY CONSISTS:-
+FILES WHICH CONSIST:1) practice.c[projects],2) main.c[practicing the concepts purpose] , 3) program.c[projects], 4) smart calculator[projects], ### real projects containing a seperate files....
 1) Syntax
 2) variables
 3) Data-Types
@@ -17,4 +19,5 @@ REPOSITORY CONSISTS:-
 7) ARRAYS[1D,2D]
 8) Strings
 9) Functions[return]
-10) .....
+10) Pointers
+11) ..... 
