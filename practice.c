@@ -1,4 +1,5 @@
 #include<stdio.h>
+// area of the rectange,square and circle small mini projects//
 /*float rectanglearea(float length, float breadth);
 float circelarea(float radius);
 float squarearea(float side);
@@ -35,7 +36,7 @@ float squarearea(float side){
     return side*side;
 }
 
-// celsius to fahrent conversation using function//
+// celsius to fahrent conversation using function mini projects.//
 float convert_celsius_fahrenheit(float celsius){
 
 
@@ -48,5 +49,26 @@ int main(){
     fahrenheit = convert_celsius_fahrenheit(celsius);
     printf("%.2f celsius is equal to %.2f fahrenheit",celsius,fahrenheit);
         return 0;
-}*/
+} */
+//pointers//
+//apna college problems on pointer concept 1) *ptr, *ptr=+5,*ptr++//
 
+int main(){
+    int x;
+    int *ptr;
+    *ptr = &x;
+    *ptr = 10;
+
+  printf("%d\n",x); //0//
+  printf("%d\n",*ptr);// 10//
+
+  
+  *ptr+=5;
+  printf("%d\n",x);
+  printf("%d\n",*ptr);
+  (*ptr)++;
+  
+  printf("%d\n",*ptr);
+  return 0;
+  
+}
