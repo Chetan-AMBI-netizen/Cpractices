@@ -53,6 +53,7 @@ int main(){
 //pointers//
 //apna college problems on pointer concept 1) *ptr, *ptr=+5,*ptr++//
 
+/*
 int main(){
     int x;
     int *ptr;
@@ -71,4 +72,51 @@ int main(){
   printf("%d\n",*ptr);
   return 0;
   
+} */
+//swap of a,b on pointers//
+/* 
+void swap(int *a, int *b);
+int main(){
+ int  aa = 10, bb= 11;
+ swap(&aa,&bb);
+ printf("aa = %d\n bb = %d\n", aa,bb);
+ return 0;
 }
+void swap(int *a, int *b){
+     int t = *a;
+         *a = *b;
+         *b = t;
+         
+
+} 
+*/
+// sum,product&average on FUNCTIONS concept//
+int sum(int a, int b);
+int product(int a, int b);
+int average( int a, int b);
+int main(){
+    int n1,n2;
+    printf("enter n1 and n2:-");
+    scanf("%d %d", &n1,&n2);
+    sum(n1,n2);
+    product(n1,n2);
+    average(n1,n2);
+    printf("the sum of %d and %d is:- %d \n ",n1,n2,sum(n1,n2));
+     printf("the product of %d and %d is:- %d\n",n1,n2,product(n1,n2));
+      printf("the average of %d and %d is:- %d\n",n1,n2,average(n1,n2));
+   return 0; 
+}
+int sum(int a, int b){
+    return a + b;
+}
+int product(int a,  int b){
+    return a * b;
+}
+int average(int a, int b){
+    return (a + b)/2;
+}
+
+
+
+
+
