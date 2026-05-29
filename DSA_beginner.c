@@ -124,12 +124,19 @@ int average(int a, int b){
 //print the product price with product GST//
 int main(){
     int price[5];
-    for (int i=0; i<=price.length; i++){
-        printf("enter %d, price:");
-
-        break()
+    for (int i=0; i<5; i++){
+        printf("entr %d price:\n",i);
+        scanf ("%d",&price[i]);
     }
+    for (int i=0; i<5; i++){
+        printf("the  product %d  price is %d\n:", i, price[i]);
+
+    }
+     int total_price = price[0] + price[1] + price[2] + price[3] + price[4];
+     printf("the total products price is:%d\n",total_price);
+    return 0;
 }
+
 
 
 
