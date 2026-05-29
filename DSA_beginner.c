@@ -1,6 +1,7 @@
 #include<stdio.h>
-// area of the rectange,square and circle small mini projects//
-/*float rectanglearea(float length, float breadth);
+//area of the rectange,square and circle small mini projects//
+/* 
+float rectanglearea(float length, float breadth);
 float circelarea(float radius);
 float squarearea(float side);
 int main()
@@ -35,8 +36,11 @@ float circelarea(float radius){
 float squarearea(float side){
     return side*side;
 }
+    */
+
 
 // celsius to fahrent conversation using function mini projects.//
+/*
 float convert_celsius_fahrenheit(float celsius){
 
 
@@ -91,6 +95,7 @@ void swap(int *a, int *b){
 } 
 */
 // sum,product&average on FUNCTIONS concept//
+/*
 int sum(int a, int b);
 int product(int a, int b);
 int average( int a, int b);
@@ -115,6 +120,18 @@ int product(int a,  int b){
 int average(int a, int b){
     return (a + b)/2;
 }
+    */
+//print the product price with product GST//
+int main(){
+    int price[5];
+    for (int i=0; i<=price.length; i++){
+        printf("enter %d, price:");
+
+        break()
+    }
+}
+
+
 
 
 
