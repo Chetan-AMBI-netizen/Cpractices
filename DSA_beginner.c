@@ -132,8 +132,16 @@ int main(){
         printf("the  product %d  price is %d\n:", i, price[i]);
 
     }
-     int total_price = price[0] + price[1] + price[2] + price[3] + price[4];
+     int  prod1=price[0] *0.18;
+    int prod2 =  price[1]*0.18;
+    int prod3 = price[2]*0.18;
+    int prod4 = price[3]*0.18;
+    int prod5 = price[4]*0.18;
+    int total = prod1 + prod2 + prod3 + prod4 + prod5;
+    int total_price = (price[0] + prod1) + (price[1] + prod2) + (price[2]+prod3) + (price[3]+prod4) + (price[4] + prod5);
+    int total_GST = (prod1+prod2+prod3+prod4+prod5);
      printf("the total products price is:%d\n",total_price);
+     printf("the total GST of all products is:-%d",total_GST);
     return 0;
 }
 
