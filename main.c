@@ -1,9 +1,9 @@
 # include <stdio.h>
 
  
-/** 
 
- int marks = 98;
+/*
+ marks = 98;
  if (marks >= 90 && marks<=100){
     printf("Grade A");
  }
@@ -29,8 +29,6 @@ do{
 }while(i<5);
 
 
-
- }
 
  //ARRAYS IN C //
  int arr[5] = {1,2,3,4,5};
@@ -213,5 +211,7 @@ void check_temperature(float temp){
    scanf("%f",&temp);
    check_temperature(temp);
    return 0;
- }*/
+ }
+   */
+  
 
