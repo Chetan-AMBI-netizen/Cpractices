@@ -2,7 +2,6 @@
 
  
 
-/*
  marks = 98;
  if (marks >= 90 && marks<=100){
     printf("Grade A");
@@ -212,6 +211,6 @@ void check_temperature(float temp){
    check_temperature(temp);
    return 0;
  }
-   */
-  
+   
+
 

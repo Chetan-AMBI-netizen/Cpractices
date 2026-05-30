@@ -122,7 +122,7 @@ int average(int a, int b){
 }
     */
 //print the product price with product GST//
-int main(){
+/*int main(){
     int price[5];
     for (int i=0; i<5; i++){
         printf("entr %d price:\n",i);
@@ -144,7 +144,30 @@ int main(){
      printf("the total GST of all products is:-%d",total_GST);
     return 0;
 }
+    */
 
+//   REVERSE ARRAY PROBLM //
+int main(){
+    int arr[] = {100,200,300,400,500};
+    int n = 5;
+    int start= 0;
+    int end  = n-1;
+    while(start<end){
+    int temp = arr[start];
+    arr[start] = arr[end];
+    arr[end] = temp;
+    start++;
+    end--;
+    }
+    printf("reverse of an array\n");
+    for (int i=0; i<n; i++){
+        printf("%d\n",arr[i]);
+    }
+
+
+    return  0;
+
+}
 
 
 
