@@ -146,8 +146,8 @@ int average(int a, int b){
 }
     */
 
-//   REVERSE ARRAY PROBLM //
-int main(){
+//   REVERSE ARRAY PROBLM  //
+/* int main(){
     int arr[] = {100,200,300,400,500};
     int n = 5;
     int start= 0;
@@ -168,9 +168,62 @@ int main(){
     return  0;
 
 }
+    */
+   
+// Create a FUNCTION to calculate the odd numbers in 1D array//
+ /*int countingodd(int arr[], int n);
+int main(){
+    int arr[]= {10,11,12,13,14,15,16,17,18,19};
+    printf( "%d", countingodd(arr,10));
+    return 0;
 
+}
+int countingodd(int arr[], int n){
+    int count =0;
+    for (int i=0; i<n; i++){
+        if(arr[i] % 2 != 0){
+            count++;
+        
+        
+        }
+    }
+    return count;
 
+}
+    */
+//  finding the second largest element//
+int secondlargest(int arr[], int n){
+    int largest = arr[0];
+    int second = -1;
+    for (int i=1; i<n; i++){
+        if(arr[i] > largest){
+            second = largest;
+            largest = arr[i];
 
+        }
+        else if (arr[i] > second && arr[i] != largest){
+            second = arr[i];
+        }
+    }
+    return second;
+}
+int main(){
+    int n;
+    printf("enter no.of elements:\n");
+    scanf("%d", &n);
+    int arr[n];
+    printf("enter %d elements:\n",n);
+    for(int i=0; i<n; i++){
+    scanf("%d", &arr[i]);
+    }
+     int result = secondlargest(arr,n);
+     if(result = -1){
+        printf(" not possible to find");
+     }
+     else
+     printf("the second largest element is:%d\n", result);
+     return 0; 
+    }
 
 
 
