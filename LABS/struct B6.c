@@ -8,7 +8,6 @@ struct Book {
 int main() {
     int n, i;
     struct Book b[10];
-
     printf("Enter number of books: ");
     scanf("%d", &n);
 
