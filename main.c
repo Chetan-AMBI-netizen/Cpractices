@@ -1,7 +1,7 @@
-/*# include <stdio.h>
+# include <stdio.h>
 
  
-
+/*
  marks = 98;
  if (marks >= 90 && marks<=100){
     printf("Grade A");
@@ -211,9 +211,8 @@ void check_temperature(float temp){
    check_temperature(temp);
    return 0;
  }
-   */
+   
   //STRINGS//
- #include <stdio.h>
 
 int main() {
     int n, books[100], key, low, high, mid, found = 0;
@@ -251,3 +250,14 @@ int main() {
 
     return 0;
 }
+    */
+   enum days
+   {
+      Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday
+
+   };
+   int main(){
+      enum days today;
+      today = Sunday;
+      printf("the value of today is %d ",today);
+   }
