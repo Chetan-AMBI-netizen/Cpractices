@@ -297,7 +297,7 @@ int main() {
          printf ("rthe value of c is%d\n",bf.c);
          return 0;
         }
-         */
+         
         int find_sum(int arr[], int n){
          int sum =0;
          for(int i=0; i<n; i++){
@@ -318,5 +318,86 @@ int main() {
          printf("the sum of the array is %d",sum);
          return 0;
         }
+           
+         struct student
+         {
+            int USN;
+            char name[20];
+            int marks;
+         };
+         void display(struct student s){
+            printf("USN:%d\n",s.USN);
+            printf("Name:%s\n",s.name);
+            printf("Marks:%d\n",s.marks);
+         }
+         int main(){
+            struct student s1;
+            printf("enter the USN:-\n");
+            scanf("%d",&s1.USN);
+            printf("enter the name:-\n");
+            scanf("%s",&s1.name);
+            printf("enter the marks:-\n");
+            scanf("%d",&s1.marks);
+            display(s1);
+            return 0;
+         }
+     
+    int sum(int ,int);//declaration of the function
+    int main(){ //definition of the main function
+   int a,b;
+   printf("enter the first number:-\n");
+   scanf("%d",&a);
+   printf("enter the second number:-\n");
+   scanf("%d",&b);
+   int result = sum(a,b); //function call
+   printf("the sum of %d and %d is %d",a,b,result);
+   return 0;
+    }
+    int sum(int a, int b){//definition of the function
+      return a+b;
+    }
+      */
+     struct student{
+   int USN;
+   char name[20];
+   int marks;
+     };
+     int main(){
+      struct student s[100];
+      int n;
+      float total=0,average;
+     printf("enter the no.of students:-\n");
+       scanf("%d",&n);
+       for(int i=0; i<n; i++){
+         printf("enter the usn of student %d:-\n",i+1);
+         scanf("%d",&s[i].USN);
+         printf("enter the name of student %d:-\n",i+1);
+         scanf("%s",&s[i].name);
+         printf("enter the marks of student %d:-\n",i+1);
+         scanf("%d",&s[i].marks);
+         total = total + s[i].marks;
+       }
+       average = total/n;
+        printf("above average students are:-\n");
+        for (int i=0;i<n; i++){
+         if(s[i].marks > average){
+            printf("USN:%d\n",s[i].USN);
+            printf("Name:%s\n",s[i].name);
+            printf("Marks:%d\n",s[i].marks);
 
+         }
+         printf("below average students are:-\n");
+         for(int i=0; i<n; i++){
+
+         if(s[i].marks < average){
+            printf("USN:%d\n",s[i].USN);
+            printf("Name:%s\n",s[i].name);
+            printf("Marks:%d\n",s[i].marks);
+
+         }
+        }
+         
+     }
+     return 0;
+   }
      
