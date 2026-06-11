@@ -250,7 +250,7 @@ int main() {
 
     return 0;
 }
-    */
+    
    enum days
    {
       Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday
@@ -261,3 +261,62 @@ int main() {
       today = Sunday;
       printf("the value of today is %d ",today);
    }
+      
+     int factorial(int n)
+     {
+      //N! = N*(N-1)!//
+      if(n==0 || n==1){
+         return 1;
+      }
+      else
+      {
+         return n*factorial(n-1);
+      }
+      }
+      int main(){
+         int n;
+         printf("enter  the number:-\n");
+         scanf("%d",&n);
+         printf("the factorial of %d is %d",n,factorial(n));
+         return 0;
+      }
+         
+        struct  bit_field{
+         int a:3;
+         int b:4;
+         int c:5;
+
+        };
+        int main(){
+         struct bit_field bf;
+         bf.a = 5;
+         bf.b = 12;
+         bf.c = 20;
+         printf ("rthe value of a is%d\n",bf.a);
+         printf ("rthe value of b is%d\n",bf.b);
+         printf ("rthe value of c is%d\n",bf.c);
+         return 0;
+        }
+         */
+        int find_sum(int arr[], int n){
+         int sum =0;
+         for(int i=0; i<n; i++){
+            sum = sum+arr[i];
+
+         }
+         return sum;
+        }
+        int main(){
+         int arr[100] , n ;
+         printf("enter the size of the array:-\n");
+         scanf("%d",&n);
+         printf("enter the elemets of an array:-\n");
+         for(int i=0; i<n; i++){
+            scanf("%d", &arr[i]);
+         }
+         int sum = find_sum(arr,n);
+         printf("the sum of the array is %d",sum);
+         return 0;
+        }
+
+     
