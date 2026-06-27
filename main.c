@@ -356,7 +356,7 @@ int main() {
     int sum(int a, int b){//definition of the function
       return a+b;
     }
-      */
+      
      struct student{
    int USN;
    char name[20];
@@ -400,4 +400,4 @@ int main() {
      }
      return 0;
    }
-     
+     */
