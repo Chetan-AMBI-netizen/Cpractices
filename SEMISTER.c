@@ -27,7 +27,7 @@ int main(){
     printf("%d",today);
     return 0;
    }
-    */
+    
    enum traficsignal{
     RED,
     YELLOW,
@@ -49,4 +49,45 @@ int main(){
     return 0;
    }
 
-   
+
+   void change(int *x){
+    *x=100;
+    printf("%d\n",*x);
+   }
+   int main(){
+    int a =40;
+    change(&a);
+    printf("%d",a);
+    return 0;
+   }
+    */
+   struct book{
+    int id;
+    char title[29];
+    char author[40];
+    int year;
+
+   };
+   int main(){
+
+    
+    struct book b[3];
+    for ( int  i=0; i<3; i++){
+        printf("enter id\n:");
+        scanf("%d",&b[i].id);
+        printf("title:\n");
+        scanf("%s",b[i].title);
+        printf("author:\n");
+        scanf("%s",b[i].author);
+        printf("year:\n");
+        scanf("%d",&b[i].year);
+    }
+    for(int i=0; i<3; i++){
+        printf(" ID :%d\n",b[i].id);
+        printf(" TITLE:%s\n",b[i].title);
+        printf(" AUTHOR:%s\n",b[i].author);
+        printf(" YEAR: %d\n",b[i].year);
+    
+    }
+    return 0;
+   }
