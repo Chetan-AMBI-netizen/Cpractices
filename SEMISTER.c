@@ -168,7 +168,7 @@ int main(){
     return 0;
 
    }
-    */
+    
    struct student{
     char name[20];
     int marks;
@@ -181,7 +181,7 @@ int main(){
     printf("enter no.of students:-\n");
     scanf("%d",&n);
     struct student s[100];
-    for(int i=0; i<n; i++){
+    for( i=0; i<n; i++){
         printf("enter name of student %d",i+1);
         scanf("%s", s[i].name);
         printf("enter a marks of student %d",i+1);
@@ -190,7 +190,7 @@ int main(){
     total = total  + s[i].marks;
     average = total/n;  
     printf("-----above the average marks students-----\n");
-    for (int i=0; i<n; i++){
+    for ( i=0; i<n; i++){
 
     
     if(s[i].marks > average){
@@ -198,8 +198,9 @@ int main(){
         printf("marks:-%d\n",s[i].marks);
 
     }
-} 
-for(int i=0; i<n; i++){
+}
+for( i=0; i<n; i++){
+
 
 
     printf("--- below average students-----");
@@ -208,6 +209,26 @@ for(int i=0; i<n; i++){
         printf("marks:-%d\n",s[i].marks);
     }
     }
-    
+
+
     return 0;
    }
+    */
+    int main(){
+        int i, j, num=1;
+        int n;
+        printf("enter no.of rows:");
+        scanf("%d",&n);
+        for( i=1; i<n; i++){
+            for (j=1; j<=i; j++){
+                printf("%d", num);
+                num++;
+            }
+
+        
+        printf("\n");
+        }
+
+        return 0;
+
+    }
