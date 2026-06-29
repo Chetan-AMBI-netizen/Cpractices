@@ -60,7 +60,7 @@ int main(){
     printf("%d",a);
     return 0;
    }
-    */
+    
    struct book{
     int id;
     char title[29];
@@ -91,3 +91,17 @@ int main(){
     }
     return 0;
    }
+
+   */
+  int add(int x, int y){
+    return x+y;
+  }
+  int main(){
+    int a =10;
+    int b=20;
+    int sum=0;
+    sum = add(a,b);
+    printf("%d\n",sum);
+    return 0;
+
+  }
