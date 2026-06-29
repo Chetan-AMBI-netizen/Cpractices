@@ -139,7 +139,7 @@ int main(){
     }
     return 0;
 }
-    */
+    
   
    void display(int arr[],  int n){
     for (int i=0; i<n; i++){
@@ -152,4 +152,19 @@ int main(){
     int n = sizeof(arr)/sizeof(arr[0]);
     display(arr,n);
     return 0;
+   }
+    */
+   int main(){
+    int n;
+    int sum =0;
+    printf("enter a n eleemnt:");
+    scanf("%d",&n);
+    int arr[] = {1,2,3,4,5};
+    for (int i=0; i<n; i++){
+      sum = sum + arr[i];
+      printf("sum is:- %d\n",sum);
+
+    }
+    return 0;
+
    }
