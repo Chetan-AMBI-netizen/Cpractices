@@ -105,7 +105,7 @@ int main(){
     return 0;
 
   }
-    */
+    
    struct student{
     char name[20];
     int marks;
@@ -125,4 +125,31 @@ int main(){
     printf("marks:-%d\n",ptr->marks);
     return 0;
 
+   }
+
+
+int main(){
+
+    int arr[] ={1,2,3,4,5};
+   int*ptr = arr;
+    for(int i=0; i<5; i++){
+        printf("%d\n",*(ptr+i));
+        
+
+    }
+    return 0;
+}
+    */
+  
+   void display(int arr[],  int n){
+    for (int i=0; i<n; i++){
+        printf("%d\n",arr[i]);
+
+    }
+   }
+   int main(){
+    int arr[] = {1,2,3,4,5};
+    int n = sizeof(arr)/sizeof(arr[0]);
+    display(arr,n);
+    return 0;
    }
