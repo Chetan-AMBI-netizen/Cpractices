@@ -153,7 +153,7 @@ int main(){
     display(arr,n);
     return 0;
    }
-    */
+    
    int main(){
     int n;
     int sum =0;
@@ -162,9 +162,52 @@ int main(){
     int arr[] = {1,2,3,4,5};
     for (int i=0; i<n; i++){
       sum = sum + arr[i];
-      printf("sum is:- %d\n",sum);
+      printf("sum is :- %d\n",sum);
 
     }
     return 0;
 
+   }
+    */
+   struct student{
+    char name[20];
+    int marks;
+   };
+   int main(){
+    int i;
+    int n;
+    int  total=0;
+    int  average; 
+    printf("enter no.of students:-\n");
+    scanf("%d",&n);
+    struct student s[100];
+    for(int i=0; i<n; i++){
+        printf("enter name of student %d",i+1);
+        scanf("%s", s[i].name);
+        printf("enter a marks of student %d",i+1);
+        scanf("%d",&s[i].marks);
+    }
+    total = total  + s[i].marks;
+    average = total/n;  
+    printf("-----above the average marks students-----\n");
+    for (int i=0; i<n; i++){
+
+    
+    if(s[i].marks > average){
+        printf("name:- %s\n",s[i].name);
+        printf("marks:-%d\n",s[i].marks);
+
+    }
+} 
+for(int i=0; i<n; i++){
+
+
+    printf("--- below average students-----");
+    if(s[i].marks < average){
+        printf("name:-%s\n",s[i].name);
+        printf("marks:-%d\n",s[i].marks);
+    }
+    }
+    
+    return 0;
    }
