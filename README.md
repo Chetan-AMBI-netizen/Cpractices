@@ -1,5 +1,5 @@
 #### ATTENTION READERS DON'T FORK THIS REPOSITORY BEACUSE,
-##### C practices purpose
+##### C practices purpose AND DEBUGGING......
 JUST I CREATED  THIS REPOSITORY TO MAINTAIN THE CONSISTENCY WORK AND ADAVNCED IN TECH STACK AND ADVANCED IN  GIT VERSION AND GITHUB####
 
 
@@ -21,4 +21,10 @@ FILES WHICH CONSIST:1) DSA_beginner.c[projects],2) main.c[practicing the concept
 8) Strings
 9) Functions[return]
 10) Pointers
-11) practicing  DSA_beginners problems.....
+11) structures
+12) unions
+13) enumerations..
+14) ###PROBLEMS:--
+15) hanoi tower...
+16) trafficlight...
+17) practicing  DSA_beginners problems.....
