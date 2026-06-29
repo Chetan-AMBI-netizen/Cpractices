@@ -92,7 +92,7 @@ int main(){
     return 0;
    }
 
-   */
+   
   int add(int x, int y){
     return x+y;
   }
@@ -105,3 +105,24 @@ int main(){
     return 0;
 
   }
+    */
+   struct student{
+    char name[20];
+    int marks;
+
+   };
+   int main(){
+    struct student s1;
+    struct student *ptr;
+    ptr = &s1;
+    printf("enter your name:-\n");
+    scanf("%s",ptr->name);
+    printf("enter your marks:-\n");
+    scanf("%d",&ptr->marks);
+
+    printf("---student details---\n");
+    printf("name:-%s\n",ptr->name);
+    printf("marks:-%d\n",ptr->marks);
+    return 0;
+
+   }
