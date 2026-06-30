@@ -1,5 +1,6 @@
 #include<stdio.h>
 #include<string.h>
+#include<math.h>
 /*union employee{
     char name[40];
     int salary;
@@ -213,7 +214,7 @@ for( i=0; i<n; i++){
 
     return 0;
    }
-    */
+    
     int main(){
         int i, j, num=1;
         int n;
@@ -232,3 +233,33 @@ for( i=0; i<n; i++){
         return 0;
 
     }
+        */
+       int main(){
+        int a,b,c;
+        int d,root1,root2;
+        printf("enter a,b,c:");
+        scanf("%d %d %d ", &a,&b,&c);
+
+        d = (b*b) - (4*a*c);
+
+        if(d>0){
+            root1 = (-b + sqrt(d) / (2*a));
+            root2 = (-b -sqrt(d) / (2*a));
+            printf("the roots are real and distict");
+            printf("root1 = %d\n",root1);
+            printf("root2 = %d\n", root2);
+
+        }
+        else if(d==0){
+            root1 =  -b / (2*a);
+            printf("the roots are real and equal");
+            printf("root1 = root2= %d\n", root1);
+
+        }
+        else{
+            printf("the roots are complex");
+           
+
+        }
+       return 0;
+       }
