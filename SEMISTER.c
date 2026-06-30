@@ -263,7 +263,7 @@ for( i=0; i<n; i++){
         }
        return 0;
        }
-*/
+
 int prime(int n){
     int i;
     if(n<=1){
@@ -289,3 +289,21 @@ int main(){
     }
     return 0;
 }
+    */
+   int factorial(int n){
+    if(n ==0 || n==1){
+        return 1;
+    }
+    else{
+        return n*factorial(n-1);
+    }
+   }
+   int main(){
+    int n;
+    int result;
+    printf("enter a n vale:");
+    scanf("%d",&n);
+    
+    printf("the factorial value of %d is:- %d\n", n, factorial(n));
+    return 0;
+   }
