@@ -289,7 +289,7 @@ int main(){
     }
     return 0;
 }
-    */
+    
    int factorial(int n){
     if(n ==0 || n==1){
         return 1;
@@ -300,10 +300,69 @@ int main(){
    }
    int main(){
     int n;
-    int result;
     printf("enter a n vale:");
     scanf("%d",&n);
     
     printf("the factorial value of %d is:- %d\n", n, factorial(n));
     return 0;
+   }
+
+int main(){
+    int rows,cols;
+    int i,j;
+    int a[10][10], transpose[10][10];
+    printf("enter no.of rows and columns:");
+    scanf("%d %d", &rows, &cols);
+    for(i=0; i<rows; i++){
+        for(j=0; j<cols; j++){
+            printf("enter the matrix:");
+            scanf("%d", &a[i][j]);
+        }
+    }
+    for(i=0; i<rows; i++){
+        for (j=0; j<cols; j++){
+
+            transpose[j][i] =  a[i][j];
+        }
+    }
+    for(i=0; i<cols; i++){
+        for( j=0; j<rows; j++){
+            printf(" the transpose of matrix is:- %d", transpose[i][j]);
+        }
+        printf("\n");
+    }
+    return 0;
+}
+    */
+   int main(){
+    int rows, cols;
+    int i,j;
+    int a[10][10], b[10][10], multi[20][20];
+    printf("enternrows and cols:");
+    scanf("%d %d ", &rows,&cols);
+    for(i=0; i<rows; i++){
+        for (j=0; j<cols; j++){
+            printf("enter the a matrix elements:\n");
+            scanf("%d", &a[i][j]);
+        }
+    }
+    for(i=0; i<rows; i++){
+        for(j=0; j< cols; j++){
+            printf("enter the b matrix elements:\n");
+            scanf("%d", &b[i][j]);
+        }
+
+    }
+    for(i=0; i<rows; i++){
+        for ( j=0; j<cols; j++){
+            printf("multiplication is\n:");
+            multi[i][j] = a[i][j] *  b[i][j];
+        
+        printf("%d",multi[i][j]);
+        }
+        printf("\n");
+
+    }
+    return 0;
+ 
    }
